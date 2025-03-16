@@ -43,18 +43,22 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-between items-center w-full px-12 mt-auto mb-10">
-        {/* RECOLOR SVG */}
         <div>
-          <Image src="lockupFly.svg" alt="Fly" width={64} height={48} />
+          <Image src="/pinkFly.svg" alt="Fly" width={188} height={48} />
         </div>
         <div className="text-base text-[#FEBFF8] flex gap-4">
           <Button className="bg-[#28103040]/25 flex items-center gap-2">
-            <Image src="twitter.svg" alt="twtter logo" width={24} height={24} />
+            <Image
+              src="/twitter.svg"
+              alt="twtter logo"
+              width={24}
+              height={24}
+            />
             <p>Twitter</p>
           </Button>
           <Button className="bg-[#28103040]/25 flex items-center gap-2">
             <Image
-              src="facebook.svg"
+              src="/facebook.svg"
               alt="facebook logo"
               width={24}
               height={24}
@@ -63,7 +67,7 @@ export default function Footer() {
           </Button>
           <Button className="bg-[#28103040]/25 flex items-center gap-2">
             <Image
-              src="youtube.svg"
+              src="/youtube.svg"
               alt="youtube logo"
               width={24}
               height={24}

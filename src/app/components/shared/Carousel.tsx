@@ -35,7 +35,7 @@ const Carousel = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="w-[calc(100vw/3)] h-[172px] min-w-[406px] bg-[#FFF6F8] p-4 rounded-lg shadow-md"
+            className="w-[calc(100vw/3)] h-[172px] min-w-[406px] bg-[#FFF6F8] p-4 rounded-lg"
           >
             <p className="text-lg text-[#522E5E]">{testimonial.text}</p>
             <div className="flex items-center mt-4">

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <div className="bg-[#FFF6F8] h-[636px] flex items-center">
+    <div className="bg-[#FFF6F8] h-[636px] flex items-center px-36 gap-32">
       <div className="w-full md:w-1/2">
         <Image
           className="flex-shrink-0"
@@ -13,7 +13,7 @@ export default function AboutSection() {
           height={444}
         />
       </div>
-      <div className="md:w1/2 space-y-3">
+      <div className="md:w1/1 space-y-3">
         <h2 className="text-3xl text-[#7E05A6]">About FlyLady</h2>
         <h1 className="text-6xl text-[#7E05A6]">
           Your guide to a simpler, happier home and life.

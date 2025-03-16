@@ -4,7 +4,7 @@ import Input from "../ui/Input";
 
 export default function NewsletterSection() {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center mb-24">
       <div className="bg-[#DEA5FF] w-[1264px] h-[383px] flex flex-col items-center justify-center rounded-xl">
         <div className="text-center mb-8">
           <p className="text-sm text-[#281030]">Want to learn more?</p>

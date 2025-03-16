@@ -22,9 +22,9 @@ export default function HeroSection() {
       </header>
       <main>
         <section>
-          <div className="container mx-auto flex flex-col md:flex-row items-center px-4">
-            <div className="w-full md:w-1/2">
-              <h1 className="text-[#7E05A6] text-8xl">
+          <div className="container mx-auto flex flex-col md:flex-row items-center my-16 px-4">
+            <div className="w-full md:w-1/1">
+              <h1 className="text-[#7E05A6] text-8xl mb-8">
                 Welcome to Your Stress-Free Home!
               </h1>
               <p className="text-[#522E5E] text-base">
@@ -61,10 +61,11 @@ export default function HeroSection() {
             <h2 className="text-[#7E05A6] text-xl mt-8">
               Based on the proven and loved FlyLady cleaning system
             </h2>
-            <div className="flex flex-wrap justify-center items-center gap-8 text-[#522E5E] text-base mt-8">
+            <div className="flex justify-center items-center text-center gap-40 text-[#522E5E] text-base mt-8">
               <div className="flex flex-col items-center gap-4">
-                “The FlyLady cleaning method is the ultimate solution for a tidy
-                home”
+                {"“The FlyLady cleaning method is the"}
+                <br />
+                {"ultimate solution for a tidy home”"}
                 <Image
                   src="/betterhomes.svg"
                   alt="BetterHomes Logo"
@@ -73,7 +74,8 @@ export default function HeroSection() {
                 />
               </div>
               <div className="flex flex-col items-center gap-4">
-                “The FlyLady Has the Cure for Your Messy House Syndrome”
+                {"“The FlyLady Has the Cure for Your"} <br />
+                {"Messy House Syndrome”"}
                 <Image
                   src="/additude.svg"
                   alt="Additude Logo"
@@ -82,8 +84,8 @@ export default function HeroSection() {
                 />
               </div>
               <div className="flex flex-col items-center gap-4">
-                “The FlyLady’s 27 Fling Boogie is a game-changer for clutter
-                control”
+                {"“The FlyLady’s 27 Fling Boogie is a"}
+                <br /> {"game-changer for clutter control”"}
                 <Image
                   src="yahoo!.svg"
                   alt="Yahoo Logo"
