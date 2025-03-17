@@ -1,5 +1,5 @@
 // * Component-ui
-import CardWithIcon from "../ui/CardWithIcon";
+import CardWithIcon from "../shared/CardWithIcon";
 
 import { getAllPostsMeta } from "@/app/lib/getPosts";
 import FeatureBlog from "../blog/FeatureBlog";
@@ -13,7 +13,7 @@ export default function DiscussionsSection() {
     <div>
       <FeatureBlog slug={featuredPost.slug} post={featuredPost} />
 
-      <div className="container w-[1264px] mx-auto pt-12 pb-12">
+      <div className="container w-full mx-auto py-12 sm:px-32 px-6">
         <div className="grid gap-6 md:grid-cols-3">
           {otherPosts.map((post) => (
             <CardWithIcon

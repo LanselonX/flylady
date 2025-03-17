@@ -1,10 +1,10 @@
-import { getAllPostsMeta } from "@/app/lib/getPosts"; // или скорректируйте путь
+import { getAllPostsMeta } from "@/app/lib/getPosts";
 import { getPostBySlug } from "@/app/lib/getPostBySlug";
 import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
-import CardWithIcon from "@/app/components/ui/CardWithIcon";
+import CardWithIcon from "@/app/components/shared/CardWithIcon";
 import Hero from "@/app/components/layout/Hero";
 import Image from "next/image";
 import Button from "@/app/components/ui/Button";

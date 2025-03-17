@@ -2,19 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-type CardProps = {
-  slug: string;
-  iconSrc: string;
-  iconAlt: string;
-  iconBgColor: string;
-  iconLabel: string;
-  textColor: string;
-  title: string;
-  bgImg: string;
-  description: string;
-};
+import { PostTypes } from "@/app/types/PostTypes";
 
-const CardWithIcon = ({
+const CardWithIcon: React.FC<PostTypes> = ({
   slug,
   iconSrc,
   iconAlt,
@@ -24,7 +14,7 @@ const CardWithIcon = ({
   title,
   bgImg,
   description,
-}: CardProps) => {
+}) => {
   return (
     <Link href={`/blog/${slug}`}>
       <div className="md:w-full px-2">
