@@ -38,7 +38,7 @@ const PaginationComponent: React.FC<PaginationProps> = ({
   };
 
   return (
-    <div className="container w-full mx-auto pb-22">
+    <div id="Blog" className="container w-full mx-auto pb-22">
       {currentPosts.length > 0 && (
         <FeatureBlog slug={currentPosts[0].slug} post={currentPosts[0]} />
       )}

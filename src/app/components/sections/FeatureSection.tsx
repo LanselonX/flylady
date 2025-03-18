@@ -1,6 +1,7 @@
 // * Img
 import Image from "next/image";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 export default function FeatureSection() {
   return (
@@ -95,13 +96,15 @@ export default function FeatureSection() {
         <h1 className="text-center text-5xl text-[#522E5E]">
           This Week’s Lessons
         </h1>
-        <Button
-          bgColor="white"
-          textColor="#281030"
-          className="border hide-on-small"
-        >
-          View All Highlights
-        </Button>
+        <Link href="/blog#Blog">
+          <Button
+            bgColor="white"
+            textColor="#281030"
+            className="border hide-on-small"
+          >
+            View All Highlights
+          </Button>
+        </Link>
       </div>
     </div>
   );

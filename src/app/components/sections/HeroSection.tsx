@@ -11,9 +11,9 @@ export default function HeroSection() {
       <Hero />
       <div className="container mx-auto flex flex-col md:flex-row items-center my-16">
         <div className="w-full md:w-1/1 max-[640px]:text-center max-[640px]:flex max-[640px]:flex-col max-[640px]:justify-center max-[640px]:items-center max-[640px]:mb-14">
-          <h1 className="text-[#7E05A6] text-6xl sm:text-8xl mb-8 font-gambarino">
+          <h1 className="text-[#7E05A6] text-6xl sm:text-8xl mb-8">
             Welcome to Your <br />
-            <span className="whitespace-nowrap">Stress-Free Home!</span>
+            <span className="lg:whitespace-nowrap">Stress-Free Home!</span>
           </h1>
           <p className="text-[#522E5E] text-base">
             Join hundreds of thousands using the FlyLady app to turn chaos into

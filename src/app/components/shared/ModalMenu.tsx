@@ -27,7 +27,14 @@ export default function ModalMenu() {
 
       <SheetContent
         side="right"
-        className="w-screen h-screen bg-gradient-to-b from-[#281030] to-[#7E05A6]"
+        className={`
+          fixed inset-0 
+          !w-screen !h-screen 
+          !max-w-none !rounded-none 
+          !p-0 !m-0 !border-0 !shadow-none 
+          overflow-y-auto 
+          bg-gradient-to-b from-[#281030] to-[#7E05A6]
+        `}
       >
         <Header />
 
@@ -54,7 +61,7 @@ export default function ModalMenu() {
           </div>
           <div>
             <Link href="/#Flylady">The FlyLady</Link>
-            <hr className="border-[#FFEFFD]/[0.22] mx-[-2.5rem] mt-8" />
+            <hr className="border-[#FFEFFD]/[0.22] mt-8" />
           </div>
         </nav>
 
