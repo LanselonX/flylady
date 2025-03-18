@@ -3,6 +3,7 @@ import Hero from "../layout/Hero";
 
 // * Img
 import Image from "next/image";
+import { CarouselMobile } from "../shared/CarouselMobile";
 
 export default function HeroSection() {
   return (
@@ -43,8 +44,7 @@ export default function HeroSection() {
           />
         </div>
       </div>
-
-      <div className="container mx-auto flex flex-col items-center px-4">
+      <div className="container mx-auto flex flex-col items-center px-4 hide-on-small mb-16">
         <h2 className="text-[#7E05A6] text-xl mt-8">
           Based on the proven and loved FlyLady cleaning system
         </h2>
@@ -76,6 +76,9 @@ export default function HeroSection() {
             <Image src="yahoo!.svg" alt="Yahoo Logo" width={170} height={44} />
           </div>
         </div>
+      </div>
+      <div className="mb-16 sm:hidden">
+        <CarouselMobile />
       </div>
     </div>
   );
