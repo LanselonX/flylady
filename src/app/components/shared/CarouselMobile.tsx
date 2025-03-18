@@ -22,7 +22,7 @@ export function CarouselMobile() {
         left: -(CarouselMobileTypes.length - 1) * containerWidth,
       });
     }
-  }, [CarouselMobileTypes.length]);
+  }, []);
 
   const handleDragEnd = () => {
     if (containerRef.current) {

@@ -1,15 +1,14 @@
 import { getAllPostsMeta } from "@/app/lib/getPosts";
 import { getPostBySlug } from "@/app/lib/getPostBySlug";
 import { notFound } from "next/navigation";
-import dynamic from "next/dynamic";
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
 import CardWithIcon from "@/app/components/shared/CardWithIcon";
 import Hero from "@/app/components/layout/Hero";
 import Image from "next/image";
 import BetweenSection from "@/app/components/sections/BetweenSection";
-
-const MDXContent = dynamic(() => import("./MDXContent"));
+import { PageProps } from "@/app/types/PageProps";
+import MDXContentWrapper from "./MDXContentWrapper";
 
 export async function generateStaticParams() {
   const posts = getAllPostsMeta();
@@ -18,12 +17,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPostPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const { slug } = await Promise.resolve(params);
+export default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = await params;
   const { frontMatter, mdxSource } = await getPostBySlug(slug);
 
   if (!frontMatter) {
@@ -62,7 +57,7 @@ export default async function BlogPostPage({
           ></div>
         </div>
         <div className="lg:max-w-[864px] mx-auto px-8">
-          <MDXContent mdxSource={mdxSource} />
+          <MDXContentWrapper mdxSource={mdxSource} />
         </div>
         <h1 className="text-5xl text-[#522E5E] py-12 text-start">
           More articles

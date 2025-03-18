@@ -8,7 +8,7 @@ export default function HeroBlog() {
       <div className="mx-auto flex flex-col text-center px-20 pt-18 text-[#7E05A6]">
         <p className="text-sm font-bold">BLOG</p>
         <h1 className="text-6xl lg:text-8xl lg:px-34">
-          We'll guide you to a decluttered home and an organized life
+          We&apos;ll guide you to a decluttered home and an organized life
         </h1>
       </div>
     </div>
