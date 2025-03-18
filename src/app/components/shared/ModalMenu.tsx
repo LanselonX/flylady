@@ -52,15 +52,21 @@ export default function ModalMenu() {
 
         <nav className="my-4 flex gap-10 px-10 flex-col space-y-4 text-2xl text-[#DEA5FF]">
           <div>
-            <Link href="/#Features">Features</Link>
+            <SheetClose asChild>
+              <Link href="/#Features">Features</Link>
+            </SheetClose>
             <hr className="border-[#FFEFFD]/[0.22] mt-8" />
           </div>
           <div>
-            <Link href="/#Lessons">Lessons</Link>
+            <SheetClose asChild>
+              <Link href="/#Lessons">Lessons</Link>
+            </SheetClose>
             <hr className="border-[#FFEFFD]/[0.22] mt-8" />
           </div>
           <div>
-            <Link href="/#Flylady">The FlyLady</Link>
+            <SheetClose asChild>
+              <Link href="/#Flylady">The FlyLady</Link>
+            </SheetClose>
             <hr className="border-[#FFEFFD]/[0.22] mt-8" />
           </div>
         </nav>
