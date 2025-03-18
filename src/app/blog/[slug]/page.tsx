@@ -7,7 +7,7 @@ import Footer from "@/app/components/layout/Footer";
 import CardWithIcon from "@/app/components/shared/CardWithIcon";
 import Hero from "@/app/components/layout/Hero";
 import Image from "next/image";
-import Button from "@/app/components/ui/Button";
+import BetweenSection from "@/app/components/sections/BetweenSection";
 
 const MDXContent = dynamic(() => import("./MDXContent"));
 
@@ -37,8 +37,8 @@ export default async function BlogPostPage({
     <div>
       <Header />
       <Hero />
-      <div className="container w-[1264px] mx-auto flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center mt-16">
+      <div className="container w-full mx-auto flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center mt-16 px-6">
           <div
             className="flex gap-2"
             style={{ backgroundColor: frontMatter.iconBgColor }}
@@ -53,25 +53,22 @@ export default async function BlogPostPage({
               {frontMatter.iconLabel}
             </p>
           </div>
-          <h1 className="text-8xl text-center text-[#7E05A6]">
+          <h1 className="text-6xl lg:text-8xl text-center text-[#7E05A6]">
             {frontMatter.title}
           </h1>
           <div
-            className="w-[1138px] h-[590px] my-30"
+            className="w-full min-h-[320px] lg:min-h-[590px] my-30 rounded-2xl px-4"
             style={{ backgroundColor: frontMatter.bgImg }}
           ></div>
         </div>
-        <div className="max-w-[864px] mx-auto">
+        <div className="lg:max-w-[864px] mx-auto px-8">
           <MDXContent mdxSource={mdxSource} />
         </div>
-        <div className="flex justify-between w-full my-24">
-          <h1 className="text-5xl text-[#522E5E]">More articles</h1>
-          <Button bgColor="white" textColor="#281030" className="border">
-            View All Highlights
-          </Button>
-        </div>
+        <h1 className="text-5xl text-[#522E5E] py-12 text-start">
+          More articles
+        </h1>
         <div className="mx-auto pb-12">
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-3 px-6">
             {otherPosts.map((post) => (
               <CardWithIcon
                 key={post.slug}
@@ -88,6 +85,7 @@ export default async function BlogPostPage({
             ))}
           </div>
         </div>
+        <BetweenSection />
       </div>
       <Footer />
     </div>

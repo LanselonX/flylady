@@ -4,7 +4,7 @@ import HeroBlog from "../components/blog/HeroBlog";
 import Footer from "../components/layout/Footer";
 import Pagination from "../components/shared/PagintaionPost";
 
-const POSTS_PER_PAGE = 3;
+const POSTS_PER_PAGE = 10;
 
 export default function BlogPage() {
   const allPosts = getAllPostsMeta();

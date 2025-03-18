@@ -49,7 +49,7 @@ export function CarouselMobile() {
           style={{ x }}
           drag="x"
           dragConstraints={constraints}
-          dragElastic={0.2}
+          dragElastic={0.3}
           onDragEnd={handleDragEnd}
           animate={controls}
         >

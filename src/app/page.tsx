@@ -22,8 +22,8 @@ export default function Home() {
       <Header />
       <HeroSection />
       <FeatureSection />
-      <BetweenSection />
       <DiscussionsSection />
+      <BetweenSection />
       <NewsletterSection />
       <InspirationalSection />
       <AboutSection />

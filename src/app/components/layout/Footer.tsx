@@ -7,27 +7,29 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-t from-[#7E05A6] to-[#281030] h-[636px] flex flex-col mt-30">
-      <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 bg-gradient-to-t from-[#890C48] to-[#D8247B] w-[1268px] h-[196px] flex justify-between items-center rounded-2xl">
-        <div className="text-[#FEBFF8] w1/2 pl-12">
-          <p className="text-sm">Ready for a clutter-free life?</p>
-          <h1 className="text-4xl">
-            Sign up for our newsletter and start your transformation!
-          </h1>
-        </div>
-        <div className="w1/2 pr-12">
-          <div className="flex space-x-4">
-            <Input placeholder="Email" className="!w-[315px]" />
-            <Button textColor="#281030" bgColor="#FEBFF8">
-              Subscribe
-            </Button>
+    <footer className="relative bg-gradient-to-t from-[#7E05A6] to-[#281030] h-auto flex flex-col mt-30">
+      <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 z-10 bg-gradient-to-t from-[#890C48] to-[#D8247B] w-full max-w-screen-lg h-auto lg:min-h-[196px] flex justify-between items-center rounded-2xl">
+        <div className="text-[#FEBFF8] w1/2 pl-12 flex flex-col lg:flex-row items-center justify-center">
+          <div>
+            <p className="text-sm">Ready for a clutter-free life?</p>
+            <h1 className="text-4xl">
+              Sign up for our newsletter and start your transformation!
+            </h1>
+          </div>
+          <div className="w1/2 pr-12">
+            <div className="flex flex-col lg:flex-row space-x-4 gap-4 lg:gap-0 w-max">
+              <Input placeholder="Email" />
+              <Button textColor="#281030" bgColor="#FEBFF8">
+                Subscribe
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-      <div className="text-[#DEA5FF] text-center flex flex-grow flex-col justify-center">
+      <div className="text-[#DEA5FF] text-center flex flex-grow flex-col justify-center mt-62">
         <p className="text-3xl">flylady premium</p>
         <p className="text-6xl">Download the Official App today!</p>
-        <div className="flex justify-center gap-8 mt-8">
+        <div className="flex justify-center gap-8 mt-8 mb-20">
           <Image
             src="/googleplay.svg"
             alt="Googleplay logo"
@@ -42,7 +44,7 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="flex justify-between items-center w-full px-12 mt-auto mb-10">
+      <div className="flex flex-col lg:flex-row justify-between items-center w-full px-12 mt-auto mb-10 gap-8">
         <div>
           <Image src="/pinkFly.svg" alt="Fly" width={188} height={48} />
         </div>

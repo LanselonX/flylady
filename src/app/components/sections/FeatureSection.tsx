@@ -1,9 +1,13 @@
 // * Img
 import Image from "next/image";
+import Button from "../ui/Button";
 
 export default function FeatureSection() {
   return (
-    <div className="flex flex-col items-center justify-center gap-8 md:px-34 px-8">
+    <div
+      id="Features"
+      className="flex flex-col items-center justify-center gap-8 md:px-34 px-8 mb-8"
+    >
       <div className="bg-gradient-to-b from-[#BDDAFF] to-[#E0ECFC] w-full h-full flex flex-col md:flex-row items-center justify-between sm:px-16 px-2 rounded-xl py-12">
         <div className="w-full md:w-1/1 space-y-3 max-[640px]:text-center">
           <div className="text-[#005DD3]">
@@ -86,6 +90,18 @@ export default function FeatureSection() {
             height={461}
           />
         </div>
+      </div>
+      <div id="Lessons" className="w-full flex justify-between py-15">
+        <h1 className="text-center text-5xl text-[#522E5E]">
+          This Week’s Lessons
+        </h1>
+        <Button
+          bgColor="white"
+          textColor="#281030"
+          className="border hide-on-small"
+        >
+          View All Highlights
+        </Button>
       </div>
     </div>
   );

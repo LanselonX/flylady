@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <div className="bg-[#FFF6F8] h-auto flex flex-col md:flex-row items-center p-12 md:p-24 gap-12 md:gap-32">
+    <div
+      id="Flylady"
+      className="bg-[#FFF6F8] h-auto flex flex-col md:flex-row items-center p-12 md:p-24 gap-12 md:gap-32"
+    >
       <div className="w-full md:w-1/2">
         <Image
           className="flex-shrink-0"

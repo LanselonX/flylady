@@ -45,7 +45,7 @@ const PaginationComponent: React.FC<PaginationProps> = ({
 
       <div className="grid gap-6 md:grid-cols-3 mt-12 justify-items-center">
         {currentPosts.slice(1).map((post) => (
-          <div className="w-full max-w-sm" key={post.slug}>
+          <div className="w-full px-8 mix-w-[388px]" key={post.slug}>
             <CardWithIcon
               slug={post.slug}
               iconSrc={post.iconSrc}
